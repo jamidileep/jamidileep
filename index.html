@@ -1,74 +1,789 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dileep Jami | Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/20c5629a29.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <title>Pradeep's Portfolio</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://res.cloudinary.com/dffu1ungl/image/upload/v1726493608/Untitled_design_10_fy1uzs.png"
+    />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-        <div class="intro">
-            <h1>Dileep Jami</h1>
-            <p>Data Science Enthusiast | Cloud Architect</p>
+      <nav id="desktop-nav-container">
+        <a href="#home" class="logo">Pradeep's Portfolio</a>
+        <i class="fa-solid fa-bars" id="menu-bar-icone"></i>
+        <ul class="nav-list">
+          <li><a href="#about" class="active">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#certificate">Certificates</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!--<nav id="hamburger-nav">
+        <a href="#home" class="logo">Pradeep's Portfolio</a>
+        <div class="hamburger-menu">
+          <div class="hamburger-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#about" onclick="toggleMenu()">About</a></li>
+            <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+            <li><a href="#project" onclick="toggleMenu()">Project</a></li>
+            <li>
+              <a href="#certificate" onclick="toggleMenu()">Certificates</a>
+            </li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          </div>
         </div>
+      </nav> -->
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Hello! I'm Dileep, a recent Computer Science graduate with experience in Data Science, Machine Learning, and AWS Cloud. I am passionate about building data-driven solutions and optimizing processes through technology.</p>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>Credit Card Fraud Detection</h3>
-            <p>Developed a model with 94% accuracy using logistic regression and ensemble techniques. Improved performance by handling imbalanced data.</p>
-            <a href="https://github.com/jamidileep/Credit-Card-Fraud" class="btn">View Project</a>
+    <section id="home" class="home-container">
+      <img
+        src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725002873/Natural_Profile_Photo_Frame_Instagram_Post_1_uob6vm.png"
+        alt="profile pic"
+        class="profile-picture"
+      />
+      <div class="home-content">
+        <p class="para1">Hello, I'm</p>
+        <h1 class="name">Pradeep M</h1>
+        <p class="para2">Data Analyst</p>
+        <div class="btn-container">
+          <a href="/Pradeep M_ Data Analyst.pdf" class="button-1" download
+            >Download Resume</a
+          >
+          <a
+            href="https://topmate.io/pradeep_analyst"
+            target="_blank"
+            class="button-2"
+            >Book an Appointment</a
+          >
         </div>
-        <div class="project">
-            <h3>Sentiment Analysis on Restaurant Reviews</h3>
-            <p>Achieved 73% accuracy in analyzing customer sentiments using NLP and machine learning techniques.</p>
-            <a href="https://github.com/jamidileep/Restaurant-Sentiment-Analysis" class="btn">View Project</a>
+        <div class="social-media-profiles">
+          <a
+            href="https://www.linkedin.com/in/pradeep-m-analyst/"
+            target="_blank"
+            ><i class="fa-brands fa-linkedin-in icon linked-in"></i>
+          </a>
+          <a href="mailto:pradeepm.analyst@gmail.com" target="_blank"
+            ><i class="fa-solid fa-envelope icon"></i
+          ></a>
         </div>
-        <div class="project">
-            <h3>Movie Recommendation System</h3>
-            <p>Developed an integrated filtering system with content-based and collaborative filtering for recommending movies based on user preferences.</p>
-            <a href="https://github.com/jamidileep/Movie-Recommendation-System" class="btn">View Project</a>
+      </div>
+      <!-- <a href="#about"><i class="fa-solid fa-angles-down arrow-icon"></i></a> -->
+    </section>
+
+    <section id="about" class="about-container">
+      <div class="headings">
+        <p class="headings-para">Get To Know More</p>
+        <h1 class="section-heading">About Me</h1>
+      </div>
+
+      <div class="education">
+        <h1>Education</h1>
+        <p class="degree">Bachelor of Science</p>
+        <p class="clg-name">
+          VIT University, Vellore <a class="clg-year">2020 - 2023</a>
+        </p>
+      </div>
+
+      <div class="timeline">
+        <h1 class="experience-heading">Experience</h1>
+        <div class="container-timeline left-container">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1726416463/Deloitte_Logo_le7w8o.png"
+            alt="Deloitte Logo"
+          />
+          <div class="text-box">
+            <h2>Deloitte</h2>
+            <h1 class="role">Data Integrity & Reporting Analyst</h1>
+            <small>Jun 2024 - Present </small>
+            <span class="left-container-arrow"></span>
+          </div>
         </div>
+        <div class="container-timeline right-container">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1726416463/Atliq_Logo_aqeljg.png"
+            alt="AtliQ Logo"
+          />
+          <div class="text-box">
+            <h2>AtliQ Technologies</h2>
+            <h1 class="role">Data Analyst Intern</h1>
+            <small>Mar 2024</small>
+            <span class="right-container-arrow"></span>
+          </div>
+        </div>
+        <div class="container-timeline left-container">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1726416463/Senchola_Logo_ru5fru.jpg"
+            alt="senchola Logo"
+          />
+          <div class="text-box">
+            <h2>Senchola</h2>
+            <h1 class="role">Data Analyst Intern</h1>
+            <small>Jul 2023 - Oct 2023</small>
+            <span class="left-container-arrow"></span>
+          </div>
+        </div>
+      </div>
+      <!--<a href="#skills"><i class="fa-solid fa-angles-down arrow-icon"></i></a>-->
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Programming Languages: C, C++, Python, SQL</li>
-            <li>Technical Skills: OOP, Machine Learning, AWS (Cloud), Data Structures</li>
-            <li>Tools: NumPy, Pandas, Power BI, MS Excel</li>
-        </ul>
+    <section id="skills" class="skills-container">
+      <div class="headings">
+        <p class="headings-para">Explore My</p>
+        <h1 class="section-heading">Skills</h1>
+      </div>
+      <div class="skills">
+        <p>EXCEL</p>
+        <p>POWER BI</p>
+        <p>SQL</p>
+        <p>PYTHON</p>
+        <p>PROBLEM-SOLVING</p>
+        <p>COMMUNICATION</p>
+        <p>ATTENTION TO DETAIL</p>
+        <p>ANALYTICAL THINKING</p>
+        <p>POWER POINT</p>
+        <p>STORY TELLING</p>
+      </div>
+      <!--<a href="#certificate"
+        ><i class="fa-solid fa-angles-down arrow-icon"></i
+      ></a>-->
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <p><strong>Data Science Intern - Cognifyz Technologies</strong> (Feb 2024 - Mar 2024)</p>
-        <p>Worked on Restaurant Data Analysis, achieving 93% accuracy in predicting aggregate ratings using ML techniques.</p>
-        <p><strong>AWS Cloud Virtual Internship - EduSkills</strong> (Mar 2022 - May 2022)</p>
-        <p>Learned cloud services like EC2, S3, VPC, Autoscaling, and more. Hosted static and dynamic websites on AWS.</p>
+    <section id="project" class="projects-container">
+      <div class="headings">
+        <p class="headings-para">Browse My Recent</p>
+        <h1 class="section-heading">Projects</h1>
+      </div>
+      <div class="project-card-container">
+        <div class="card-container">
+          <img
+            src="https://images.codebasics.io/filters:format(webp)/fit-in/450x450/uploads/learner-portfolio/projects/thumbnail/208116/65cf60b5e92ed/648ea959c6.png"
+            alt="thumbnail"
+            class="project-thumbnail"
+          />
+          <div class="project-title">
+            <h1>Business Insights 360</h1>
+
+            <div class="button-logo-container">
+              <button id="button" onclick="liveDashboard()">
+                View Project
+              </button>
+              <img
+                src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725383000/Microsoft-Power-BI-Logo-2013_gelnwa.png"
+                alt="skill logo"
+              />
+            </div>
+          </div>
+          <div id="live-dashboard" class="dashboard-main">
+            <div class="live-dashboard-container">
+              <i
+                class="fa-solid fa-xmark close-icon"
+                onclick="closeDashboard()"
+              ></i>
+              <h1>
+                Business Insights 360
+                <img
+                  src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725383000/Microsoft-Power-BI-Logo-2013_gelnwa.png"
+                  alt=""
+                  class="logo-skill"
+                />
+              </h1>
+              <hr class="hr-line" />
+              <p class="main-descirption">
+                I created a Power BI dashboard called Business Insights 360 for
+                AtliQ Hardwares, a company that sells computer hardwares. The
+                dashboard helps them to understand their financial, sales,
+                marketing, supply chain, and executive performance. It also
+                shows them how accurate their predictions are and where
+              </p>
+              <div class="project-details-container">
+                <div class="details-content">
+                  <h1>Project Details</h1>
+                  <p>
+                    AtliQ Hardware, a computer hardware company in India, needed
+                    a dashboard to assess their business performance and make
+                    data-driven decisions.
+                  </p>
+
+                  <p>
+                    My role was to develop an interactive dashboard that
+                    provided insights into their financial, sales, marketing,
+                    and supply chain operations.
+                  </p>
+
+                  <p>
+                    I integrated data from Excel/CSV files and a MySQL database
+                    into Power BI using Power Query and DAX. I built a data
+                    model and developed interactive visuals, including filters,
+                    slicers, and drill-downs. I also optimized the dashboard
+                    using DAX Studio for faster performance.
+                  </p>
+
+                  <p>
+                    The dashboard provided key business insights, enabling AtliQ
+                    Hardware to identify strengths, weaknesses, and areas for
+                    improvement, ultimately leading to better
+                    strategic decisions.
+                  </p>
+                </div>
+                <div class="presentation-container">
+                  <h1>Presentation Video</h1>
+                  <iframe
+                    class="video-frame"
+                    src="https://www.youtube.com/embed/yC4r7WYaFqc"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+
+              <h1 class="live-dashboard-heading">Live Dashboard</h1>
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiMzJkODEzZjUtMWJmZC00YjMyLWJlYzYtZjJmZTJjMGE0OWU4IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9"
+                frameborder="0"
+                class="frame-rate"
+              ></iframe>
+
+              <div class="project-view-container">
+                <a
+                  href="https://www.linkedin.com/posts/pradeep-m-analyst_business-insights-360-activity-7150077085884047360-NReM/?utm_source=share&utm_medium=member_desktop"
+                  target="_blank"
+                  class="linkedin-engagement"
+                >
+                  <i class="fa-brands fa-linkedin dashboard-icon1"></i>
+                  View Project Engagement
+                </a>
+                <a
+                  href="https://github.com/pradeep-the-analyst/BI-360"
+                  target="_blank"
+                  class="githun-repo"
+                >
+                  <i class="fa-brands fa-github dashboard-icon2"></i>
+                  View Project on GitHUB
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725279944/3ed2457fb5_wlpk0b.webp"
+            alt="thumbnail"
+            class="project-thumbnail"
+          />
+          <div class="project-title">
+            <h1>Hospitality Analysis</h1>
+
+            <div class="button-logo-container">
+              <button id="button" onclick="liveDashboard()">
+                View Project
+              </button>
+              <img
+                src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725383000/Microsoft-Power-BI-Logo-2013_gelnwa.png"
+                alt="skill logo"
+              />
+            </div>
+          </div>
+          <div id="live-dashboard2" class="dashboard-main">
+            <div class="live-dashboard-container">
+              <i
+                class="fa-solid fa-xmark close-icon"
+                onclick="closeDashboard()"
+              ></i>
+              <h1>
+                Hospitality Analysis
+                <img
+                  src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725383000/Microsoft-Power-BI-Logo-2013_gelnwa.png"
+                  alt=""
+                  class="logo-skill"
+                />
+              </h1>
+              <hr class="hr-line" />
+              <p class="main-descirption">
+                Revive Insights 360 for Marriott Bonvoy: a PowerBI project
+                revealing weekly hotel performance metrics, occupancy trends,
+                room distribution, and KPI cards tailored for executive-level
+                decision-makers.
+              </p>
+
+              <div class="project-details-container">
+                <div class="details-content">
+                  <h1>Project Details</h1>
+                  <p>
+                    Marriott Bonvoy needed insights to improve booking trends,
+                    guest preferences, and overall hotel performance.
+                  </p>
+                  <p>
+                    I was tasked with developing an interactive dashboard that
+                    could analyze key metrics like booking platforms,
+                    cancellations, and guest preferences.
+                  </p>
+                  <p>
+                    Using Power BI, I created the "Revive Insights 360" tool,
+                    integrating booking, cancellation, and guest data. The
+                    dashboard featured top booking platforms, cancellation
+                    patterns, and room allocation optimization, with drill-down
+                    options for hotel-specific performance.
+                  </p>
+                  <p>
+                    The tool empowered Marriott to make data-driven decisions,
+                    leading to increased bookings, improved revenue, and
+                    enhanced guest satisfaction.
+                  </p>
+                </div>
+                <div class="presentation-container">
+                  <h1>Presentation Video</h1>
+                  <iframe
+                    class="video-frame"
+                    src="https://www.youtube.com/embed/wrtcperJ4IE?si=w6TtCShtlqDV_sbg"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+
+              <h1 class="live-dashboard-heading">Live Dashboard</h1>
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiYWRkOTBkYjctYzI2Ny00NGFkLTljN2EtOGFlZDk4OTU4MTg2IiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9"
+                frameborder="0"
+                width="100%"
+                height="800"
+                class="frame-rate"
+              ></iframe>
+              <div class="project-view-container">
+                <a
+                  href="https://www.linkedin.com/posts/pradeep-m-analyst_datamagic-reviveinsights-codebasics-activity-7155899561398427648-r_JB/?utm_source=share&utm_medium=member_desktop"
+                  class="linkedin-engagement"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin dashboard-icon1"></i>View
+                  Project Engagement</a
+                >
+
+                <a
+                  href="https://github.com/pradeep-the-analyst/ReviveIQ-Insights"
+                  class="githun-repo"
+                  target="_blank"
+                  ><i class="fa-brands fa-github dashboard-icon2"></i>View
+                  Project on GitHUB</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725279944/8e51bd6a0a_kvjolj.webp"
+            alt="thumbnail"
+            class="project-thumbnail"
+          />
+          <div class="project-title">
+            <h1>Sales and Finance Analytics</h1>
+
+            <div class="button-logo-container">
+              <button id="button" onclick="liveDashboard()">
+                View Project
+              </button>
+              <img
+                src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725468350/download-removebg-preview_h1cuor.png"
+                alt="skill logo"
+              />
+            </div>
+          </div>
+          <div id="live-dashboard3" class="dashboard-main">
+            <div class="live-dashboard-container">
+              <i
+                class="fa-solid fa-xmark close-icon"
+                onclick="closeDashboard()"
+              ></i>
+              <h1>
+                Sales and Finance Analytics
+                <img
+                  src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725468350/download-removebg-preview_h1cuor.png"
+                  alt=""
+                  class="logo-skill"
+                />
+              </h1>
+              <hr class="hr-line" />
+              <p class="main-descirption">
+                AtliQ Sales and Finance Analytics Reports showcases my
+                exploration into customer and market performance, financial
+                health, and strategic decision-making. Leveraged ETL
+                methodologies, Power Query, Power Pivot, and DAX to craft
+                impactful reports.
+              </p>
+
+              <div class="details-content third-project">
+                <h1>Project Details</h1>
+                <p>
+                  <b>Sales Report Insights: </b>Analyzed customer sales figures
+                  and tracked year-over-year growth in the Customer Performance
+                  Report. Conducted an in-depth comparison of market performance
+                  versus sales targets in the Market Performance and Sales
+                  Targets Comparison Report, providing clear insights for
+                  strategic decision-making.
+                </p>
+                <p>
+                  <b>Finance Report Insights: </b>
+                  Assessed financial performance across various time frames in
+                  Profit & Loss (P&L) Reports, broken down by fiscal year and
+                  months. Provided market-specific financial benchmarks through
+                  P&L Reports by Markets, helping to identify key areas
+                  for improvement.
+                </p>
+              </div>
+
+              <div class="project-view-container">
+                <a
+                  href="https://www.linkedin.com/posts/pradeep-m-analyst_dataanalysis-excel-dataanalytics-activity-7138055223394140160-wGoB/?utm_source=share&utm_medium=member_desktop"
+                  class="linkedin-engagement"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin dashboard-icon1"></i>View
+                  Project Engagement</a
+                >
+
+                <a
+                  href="https://github.com/pradeep-the-analyst/excel-AtliQ-Reports"
+                  class="githun-repo"
+                  target="_blank"
+                  ><i class="fa-brands fa-github dashboard-icon2"></i>View
+                  Project on GitHUB</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-container">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725279944/9d22d85308_mcskun.webp"
+            alt="thumbnail"
+            class="project-thumbnail"
+          />
+          <div class="project-title">
+            <h1>Festive Campaign Analysis</h1>
+
+            <div class="button-logo-container">
+              <button id="button" onclick="liveDashboard()">
+                View Project
+              </button>
+              <div class="skill-img">
+                <img
+                  src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725383000/Microsoft-Power-BI-Logo-2013_gelnwa.png"
+                  alt="skill logo"
+                />
+                +
+                <img
+                  src="https://res.cloudinary.com/dffu1ungl/image/upload/v1726482744/SQL_Logo_iztbna-removebg-preview_pqg3qf.png"
+                  alt="skill logo"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="live-dashboard2" class="dashboard-main">
+            <div class="live-dashboard-container">
+              <i
+                class="fa-solid fa-xmark close-icon"
+                onclick="closeDashboard()"
+              ></i>
+              <h1>
+                Festive Campaign Analysis
+                <br class="img-br" />
+
+                <img
+                  src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725383000/Microsoft-Power-BI-Logo-2013_gelnwa.png"
+                  alt="skill logo"
+                  class="logo-skill"
+                />
+                +
+                <img
+                  src="https://res.cloudinary.com/dffu1ungl/image/upload/v1726482744/SQL_Logo_iztbna-removebg-preview_pqg3qf.png"
+                  alt=""
+                  class="logo-skill"
+                />
+              </h1>
+              <hr class="hr-line" />
+              <p class="main-descirption">
+                Analyzed data from Diwali and Sankranti promotions using SQL and
+                PowerBI. I uncovered which promotions worked best, increased
+                sales significantly, and identified top-performing products.
+              </p>
+
+              <div class="project-details-container">
+                <div class="details-content">
+                  <h1>Project Details</h1>
+                  <p>
+                    Atliq Mart, with over 50 supermarkets, needed insights to
+                    analyze the impact of their festive promotions during Diwali
+                    and Sankranti.
+                  </p>
+                  <p>
+                    Atliq Mart, with over 50 supermarkets, needed insights to
+                    analyze the impact of their festive promotions during Diwali
+                    and Sankranti.
+                  </p>
+                  <p>
+                    I created a "sales summary" view and built interactive Power
+                    BI dashboards to visualize trends, assess product
+                    performance, and measure promotion impact. This allowed for
+                    real-time analysis of sales and customer engagement.
+                  </p>
+                  <p>
+                    Sales increased by 107.64% during Diwali and 113.58% during
+                    Sankranti. The analysis provided strategic insights into
+                    top-performing products, driving future data-driven
+                    marketing decisions.
+                  </p>
+                </div>
+                <div class="presentation-container">
+                  <h1>Presentation Video</h1>
+                  <iframe
+                    class="video-frame"
+                    src="https://www.youtube.com/embed/m4qr9eKvrhM?si=xlfwvjsYsdBD4uqY"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen
+                  ></iframe>
+                </div>
+              </div>
+
+              <h1 class="live-dashboard-heading">Live Dashboard</h1>
+              <iframe
+                src="https://app.powerbi.com/view?r=eyJrIjoiNmRjZWRjNTgtZTYzYS00MzUyLThmNjItNzA3YzhhZDllYTQwIiwidCI6ImM2ZTU0OWIzLTVmNDUtNDAzMi1hYWU5LWQ0MjQ0ZGM1YjJjNCJ9"
+                frameborder="0"
+                width="100%"
+                height="800"
+                class="frame-rate"
+              ></iframe>
+              <div class="project-view-container">
+                <a
+                  href="https://www.linkedin.com/posts/pradeep-m-analyst_dataanalytics-sqlproject-powerbi-activity-7164120449143046144-4fAw/?utm_source=share&utm_medium=member_desktop"
+                  class="linkedin-engagement"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin dashboard-icon1"></i>View
+                  Project Engagement</a
+                >
+
+                <a
+                  href="https://github.com/pradeep-the-analyst/Atliq-mart"
+                  class="githun-repo"
+                  target="_blank"
+                  ><i class="fa-brands fa-github dashboard-icon2"></i>View
+                  Project on GitHUB</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--<a href="#contact"><i class="fa-solid fa-angles-down arrow-icon"></i></a>-->
     </section>
 
-    <footer>
-        <h2 id="contact">Contact Me</h2>
-        <p>Email: dileepjami566@gmail.com | Phone: +91 7288845095 | <a href="https://github.com/jamidileep">GitHub</a></p>
+    <section id="certificate" class="certificate-container">
+      <div class="headings">
+        <p class="headings-para">My</p>
+        <h1 class="section-heading">Awards & Certificates</h1>
+      </div>
+      <div class="certificate-card-container">
+        <div class="certificate-card">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725467181/Google_Data_Analytics_Specialization_argo8i.webp"
+            alt=""
+          />
+          <p class="certificate-name">Google Data Analytics Specialization</p>
+        </div>
+        <div class="certificate-card">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725467190/Excel_Mother_of_Business_Intelligence_basqbu.png"
+            alt=""
+          />
+          <p class="certificate-name">Advanced Excel for Data Analytics</p>
+        </div>
+        <div class="certificate-card">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725467189/Power_BI_Data_Analytics_for_all_Level_2.O_wkiqby.png"
+            alt=""
+          />
+          <p class="certificate-name">
+            Power BI: Beginner to Advance for Data Analytics
+          </p>
+        </div>
+        <div class="certificate-card">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725467188/SQL_Beginners_to_advanced_for_Data_Professionals_kusmoz.png"
+            alt=""
+          />
+          <p class="certificate-name">
+            SQL: Beginner to Advance for Data Analytics
+          </p>
+        </div>
+
+        <div class="certificate-card">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725467189/Data_Analytics_Bootcam_3.O_h5rtih.png"
+            alt=""
+          />
+          <p class="certificate-name">Data Analytics Bootcamp</p>
+        </div>
+        <div class="certificate-card">
+          <img
+            src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725467180/Resume_Project_Challenge_Winner_rjarqq.webp"
+            alt=""
+          />
+          <p class="certificate-name">Resume Project Challenge - Winner</p>
+        </div>
+      </div>
+      <!--<a href="#project"><i class="fa-solid fa-angles-down arrow-icon"></i></a>-->
+    </section>
+
+    <section id="contact" class="contact">
+      <div class="headings">
+        <p class="headings-para">Get in Touch</p>
+        <h1 class="section-heading">Contact Me</h1>
+      </div>
+
+      <div class="form-content-container">
+        <div class="form-content">
+          <h1>Let's Connect</h1>
+          <p>
+            I’m a data analyst passionate about solving problems and helping
+            others grow. Whether you need help with data insights, resume
+            reviews, or optimizing your LinkedIn and Naukri profiles, feel free
+            to reach out. I'm also open to exploring new opportunities.
+          </p>
+          <div class="social-media-icons">
+            <a
+              href="https://www.linkedin.com/in/pradeep-m-analyst/"
+              target="_blank"
+              ><i
+                class="fa-brands fa-linkedin-in linkedin-icon"
+                style="color: #0077b5"
+              ></i>
+            </a>
+            <a href="mailto:pradeepm.analyst@gmail.com" target="_blank"
+              ><i class="fa-solid fa-envelope contact-icon"></i
+            ></a>
+            <script
+              src="https://topmate-embed.s3.ap-south-1.amazonaws.com/v1/topmate-embed.js"
+              user-profile="https://topmate.io/embed/profile/pradeep_analyst?theme=ffbb38"
+              btn-style='{"backgroundColor":"#000","color":"#fff","border":"1px solid #000"}'
+              embed-version="v1"
+              button-text="Let's Connect"
+              position-right="30px"
+              position-bottom="30px"
+              custom-padding="0px"
+              custom-font-size="16px"
+              custom-font-weight="500"
+              custom-width="200px"
+              async=""
+              defer=""
+            ></script>
+            <img
+              src="https://res.cloudinary.com/dffu1ungl/image/upload/v1725256003/udpg1suHjRq3SU9U4yKFZ1-removebg-preview_at2fs5.png"
+              alt="topmate logo"
+              class="topmate"
+              id="topmate-logo"
+            />
+          </div>
+        </div>
+
+        <form action="https://api.web3forms.com/submit" method="POST">
+          <input
+            type="hidden"
+            name="access_key"
+            value="195781f0-c000-48a4-9585-8994d39d2ff7"
+          />
+
+          <input
+            type="text"
+            name="name"
+            placeholder="Enter Your Name"
+            required
+            class="input-style"
+          />
+          <input
+            type="email"
+            name="email"
+            placeholder="Enter Your Mail Id"
+            required
+            class="input-style"
+          />
+
+          <input
+            type="text"
+            name="subject"
+            placeholder="Enter Subject Of The Mail"
+            required
+            class="input-style"
+          />
+
+          <textarea
+            name="message"
+            cols="30"
+            rows="6"
+            placeholder="Enter Your Message Here"
+          ></textarea>
+          <button type="submit" class="submit-button">
+            SUBMIT <i class="fa-solid fa-paper-plane icon-plane"></i>
+          </button>
+        </form>
+      </div>
+
+      <a href="#home"><i class="fa-solid fa-angles-up arrow-icon"></i></a>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <h2>
+          <a
+            href="https://docs.google.com/forms/d/e/1FAIpQLSf7F9AOQyc4X3r1JtOmd3SVf5agnY55RKQg-4upBV_j2Q4i_w/viewform?usp=sf_link"
+            target="_blank"
+            class="get-yours"
+            >Get Your Custom Portfolio Website</a
+          >
+        </h2>
+      </div>
+      <div class="contact-link">
+        <h2>
+          Developed by
+          <a
+            href="https://www.linkedin.com/in/prasanya-shankar/"
+            target="_blank"
+            class="tooltip"
+            >Prasanya Shankar
+            <span class="tooltiptext">Let's connect on LinkedIn</span></a
+          >
+        </h2>
+      </div>
     </footer>
 
-    <script src="script.js"></script>
-</body>
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script src="index.js"></script>
+  </body>
 </html>
